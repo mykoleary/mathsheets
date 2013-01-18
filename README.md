@@ -16,6 +16,7 @@ Currently, each file has options that can be controlled by querystring variables
 
 operationSheet
 ==============
+These are your basic practice sheets for timed tests to help increase speed and recall.
 
 base demo URL: http://blueneedle.com/printables/operationSheets.php?
 
@@ -50,6 +51,55 @@ Defines the maximum number for the top and bottom respectively
 
 
 ## Example URLS
-* Divided by from 0 - 12 : http://blueneedle.com/printables/operationSheets.php?mathtype=divide&layout=mixed&maxtop=12&mintop=0&minbot=0&maxbot=12
+* Divided by from 0 - 12 : http://blueneedle.com/printables/operationSheets.php?mathtype=divide&layout=mixed&maxtop=12&mintop=1&minbot=1&maxbot=12
 * 6/7 Addition Tables to 10: http://blueneedle.com/printables/operationSheets.php?mathtype=plus&layout=mixed&maxtop=10&mintop=0&minbot=6&maxbot=7
-* 
+
+
+sudokuTable
+===========
+This is not sudkou proper, but some of the logic used to solve these is reminiscent of Sudoku strategies.  The object is to fill out the mixed tables with correct answers.
+
+base demo URL: http://blueneedle.com/printables/sudokuTable.php?
+
+## Variables
+
+### difficulty
+Defines the difficulty in increasing order.  The harder the difficulty, the less numbers are in the table and around the edges
+
+* default - easy level: all outer edges, no inner numbers
+* medium - medium level: about half the outer numbers and inner numbers
+* high - high level: less outer and inner numbers
+* crazy - most diffcult: few to no outer numbers and few inner numbers
+
+### rows
+Defiens how many rows exist to make printing full page in differing browsers easier
+
+* default - two rows of two
+* any integer (not type tested) - 1, 2, 3, 4, etc rows of 2
+
+numberWords
+===========
+This is an exercise in turning words into numbers - the convert_number_to_words function has been largely borrowed, but with logic added to allow looped calling of it.
+
+base demo URL: http://blueneedle.com/printables/numberWords.php?
+
+## variables
+
+### minrand
+The minimum random number that can be choosen
+
+* default - 0 
+* any integer (not type tested) - 1, 2, 3, 4, etc
+
+### maxrand
+The maximum random number that can be choosen
+
+* default - 200 
+* any integer (not type tested) - 100, 250, 3000, 4500, etc
+
+### rows
+The number of rows to create in the loop - default is set to be one page in Chrome
+
+* default - 24
+* any integer (not type tested) - 10, 25, 30, 45, etc
+
