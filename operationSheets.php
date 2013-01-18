@@ -167,10 +167,12 @@ for ($i=0; $i<($iRows*$iPages); $i++)
                     $iBot = $iTempVal; 
                 }
             }
-            if (($_GET['mathtype'] === "plusminus") && (($i + $j) % 2)) {
+            if ($_GET['mathtype'] === "plusminus") {
+                if (($i + $j) % 2) {
                     $sMathType = "-";
-            } else {
+                } else {
                     $sMathType = "+";
+                }
             }
 
             ?>
